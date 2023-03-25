@@ -105,12 +105,16 @@ button {
   cursor: pointer;
   padding: 0.5rem;
 
+  &.active {
+    background: #8177ff;
+  }
+
   > img {
     width: 100%;
   }
 
   &:hover {
-    background: #5e5e5e;
+    filter: brightness(1.2);
   }
 }
 

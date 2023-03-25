@@ -109,7 +109,10 @@ function App() {
           <button onClick={() => setIsSettingsActive((prev) => !prev)}>
             <img src={settings} alt="settings" />
           </button>
-          <button onClick={() => refreshTest()}>
+          <button
+            className={isInputDisabled ? "active" : ""}
+            onClick={() => refreshTest()}
+          >
             <img src={refresh} alt="settings" />
           </button>
         </div>
